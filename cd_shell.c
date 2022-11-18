@@ -27,7 +27,7 @@ int cd_shell(data_shell *datash)
 		return (1);
 	}
 
-	if (_strcmp("-", dir) == 0)
+	if (_strcmp("--", dir) == 0)
 	{
 		cd_previous(datash);
 		return (1);
