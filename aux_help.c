@@ -23,7 +23,7 @@ void aux_help_env(void)
 
 void aux_help_setenv(void)
 {
-	char *help = "setenv: setenv (const char *name, const char *value,";
+	char *help = "setenv: setenv (const char *name, const char *value)\n\t";
 
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = "int replace)\n\t";
@@ -83,7 +83,7 @@ void aux_help_exit(void)
 	char *help = "exit: exit [n]\n Exit shell.\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Exits the shell ith a status of N. If N in ommited, , the exit";
+	help = "Exits the shell with a status of N. If N is ommited, , the exit";
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = "status is that of the last command executed\n";
 	write(STDOUT_FILENO, help, _strlen(help));
