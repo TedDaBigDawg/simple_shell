@@ -84,7 +84,7 @@ void add_nodes(sep_list **head_s, line_list **head_l, char *input)
 }
 
 /**
- * go _next - go to the next command line stored
+ * go_next - go to the next command line stored
  *
  * @list_s: sep list
  * @list_l: command line list

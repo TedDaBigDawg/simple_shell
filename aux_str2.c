@@ -93,7 +93,6 @@ char *_strtok(char str[], const char *delim)
 		str_end = &str[i];
 	}
 	str_start = splitted;
-
 	if (str_start == str_end)
 		return (NULL);
 
@@ -104,17 +103,14 @@ char *_strtok(char str[], const char *delim)
 			if (*splitted && *(splitted - 1) == '\0')
 				break;
 		}
-
 		for (i = 0; delim[i]; i++)
 		{
 			if (*splitted == delim[i])
 			{
 				*splitted = '\0';
-
 				if (splitted == str_start)
 					str_start++;
 				break;
-
 			}
 		}
 		if (bool == 0 && *splitted)
@@ -131,7 +127,6 @@ char *_strtok(char str[], const char *delim)
  * @s: input string
  * Return: 1 if string is a number and 0 if not
  */
-
 int _isdigit(const char *s)
 {
 	unsigned int i;

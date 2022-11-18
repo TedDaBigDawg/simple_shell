@@ -122,7 +122,7 @@ char *error_not_found(data_shell *datash)
  * Return: Error message
  */
 
-char *erro_exit_shell(data_shell *datash)
+char *error_exit_shell(data_shell *datash)
 {
 	int length;
 	char *error;
